@@ -1,0 +1,15 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["standard"],
+  "plugins": ["react"],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "warn",
+    "import/newline-after-import": ["error", { "count": 1 }],
+    "space-before-function-paren": 0
+  }
+}

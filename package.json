@@ -1,25 +1,34 @@
 {
-  "name": "react-web-starter",
+  "name": "rickandmorty",
   "version": "0.0.0",
   "main": "index.js",
   "repository": "https://github.com/mkallies/web-starter.git",
   "author": "Michael <michaelkallies88@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start":
-      "webpack-dev-server --config ./webpack.config.js --mode development",
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
     "build": "webpack --mode production",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "lint-staged": {
-    "src/**/*.js": ["yarn eslint"]
+    "src/**/*.js": [
+      "yarn eslint"
+    ]
   },
   "devDependencies": {
+    "axios-mock-adapter": "^1.15.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.2",
     "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.4.0",
+    "enzyme-to-json": "^3.3.4",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.10.0",
@@ -27,25 +36,33 @@
     "eslint-plugin-promise": "^3.7.0",
     "eslint-plugin-react": "^7.7.0",
     "eslint-plugin-standard": "^3.0.1",
+    "file-loader": "^2.0.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "husky": "^0.14.3",
+    "jest": "^23.5.0",
     "lint-staged": "^7.0.4",
     "prettier-eslint": "^8.8.1",
+    "prop-types": "^15.6.2",
     "redux-devtools-extension": "^2.13.2",
+    "redux-mock-store": "^1.5.3",
     "webpack": "^4.5.0",
     "webpack-cli": "^2.0.14",
     "webpack-dev-server": "^3.1.1"
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "css-loader": "^1.0.0",
     "lodash": "^4.17.5",
-    "prop-types": "^15.6.1",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
+    "react-toastify": "^4.3.0",
     "redux": "^3.7.2",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "semantic-ui-react": "^0.82.3",
+    "style-loader": "^0.23.0",
+    "styled-components": "^3.4.5"
   }
 }

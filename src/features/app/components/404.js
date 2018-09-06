@@ -1,5 +1,5 @@
 import React from 'react'
 
-const FourOhFour = () => <div>404</div>
+const FourOhFour = () => <div>Hey! Go Back!</div>
 
 export default FourOhFour
